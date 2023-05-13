@@ -15,7 +15,7 @@ My configuration for {foot}, the fast, lightweight and minimalist Wayland termin
 
 == Usage
 
-This repository contains the configuration file for {Git}.
+This repository contains the configuration file for {foot}.
 This file is synchronized using this Git repository.
 The following instructions detail how to use and sync this repository.
 
