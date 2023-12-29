@@ -37,11 +37,11 @@ git -C ~/Projects clone git@github.com:jwillikers/foot-config.git
 mkdir ~/.config/foot/
 ----
 
-. Copy the `foot.ini` file to the config directory.
+. Symlink the `foot.ini` file to the config directory.
 +
 [,sh]
 ----
-cp ~/Projects/foot-config/foot.ini ~/.config/foot/
+ln --relative --symbolic ~/Projects/foot-config/foot.ini ~/.config/foot/foot.ini
 ----
 
 . Verify the configuration in the `foot.ini` file.
@@ -49,52 +49,6 @@ cp ~/Projects/foot-config/foot.ini ~/.config/foot/
 [,sh]
 ----
 foot --check-config
-----
-
-=== Update
-
-To update the settings in this repository from an existing installation, follow these steps.
-
-. If you haven't already done so, clone this repository.
-+
-[,sh]
-----
-git -C ~/Projects clone git@github.com:jwillikers/foot-config.git
-----
-
-. Copy the `foot.ini` file from the config directory to this repository.
-+
-[,sh]
-----
-cp ~/.config/foot/foot.ini ~/Projects/foot-config/
-----
-
-. Verify the configuration in the `foot.ini` file.
-+
-[,sh]
-----
-foot --config=~/Projects/foot-config/foot.ini --check-config
-----
-
-. Stage the updated file.
-+
-[,sh]
-----
-git -C ~/Projects/foot-config add -A
-----
-
-. Commit.
-+
-[,sh]
-----
-git -C ~/Projects/foot-config commit -m "Update configuration putting all others to shame"
-----
-
-. Push the changes back to the central repository.
-+
-[,sh]
-----
-git -C ~/Projects/foot-config push
 ----
 
 == Tips and Tricks

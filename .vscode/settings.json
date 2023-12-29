@@ -3,6 +3,8 @@
         "adoc",
         "ifdef",
         "jwillikers",
-        "mkdir"
+        "mkdir",
+        "ostree",
+        "terminfo"
     ]
 }
