@@ -6,5 +6,6 @@
         "mkdir",
         "ostree",
         "terminfo"
-    ]
+    ],
+    "asciidoc.antora.enableAntoraSupport": false
 }
