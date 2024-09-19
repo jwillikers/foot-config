@@ -10,12 +10,14 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 :foot: https://codeberg.org/dnkl/foot[foot]
+:foot.ini: https://codeberg.org/dnkl/foot/src/branch/master/foot.ini[foot.ini]
 
 My configuration for {foot}, the fast, lightweight and minimalist Wayland terminal emulator.
 
 == Usage
 
 This repository contains the configuration file for {foot}.
+The reference {foot.ini} file is available in the foot repository.
 This file is synchronized using this Git repository.
 The following instructions detail how to use and sync this repository.
 
