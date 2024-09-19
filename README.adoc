@@ -84,7 +84,7 @@ Please refer to the bundled link:LICENSE.adoc[license].
 
 == Copyright
 
-© 2022-2023 Jordan Williams
+© 2022-2024 Jordan Williams
 
 == Authors
 
