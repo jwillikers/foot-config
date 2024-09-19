@@ -30,18 +30,18 @@ Install these settings with the following instructions.
 git -C ~/Projects clone git@github.com:jwillikers/foot-config.git
 ----
 
-. Create the _~/.config/foot/_ directory.
-+
-[,sh]
-----
-mkdir --parents ~/.config/foot/
-----
-
 . Verify the configuration in the `foot.ini` file.
 +
 [,sh]
 ----
 foot --config=foot.ini --check-config
+----
+
+. Create the _~/.config/foot/_ directory.
++
+[,sh]
+----
+mkdir --parents ~/.config/foot/
 ----
 
 . Symlink the `foot.ini` file to the config directory.
