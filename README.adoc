@@ -11,6 +11,7 @@ ifdef::env-github[]
 endif::[]
 :foot: https://codeberg.org/dnkl/foot[foot]
 :foot.ini: https://codeberg.org/dnkl/foot/src/branch/master/foot.ini[foot.ini]
+:just: https://github.com/casey/just[just]
 
 My configuration for {foot}, the fast, lightweight and minimalist Wayland terminal emulator.
 
@@ -25,32 +26,27 @@ The following instructions detail how to use and sync this repository.
 
 Install these settings with the following instructions.
 
+. Install {just} by following the instructions in the https://github.com/casey/just?tab=readme-ov-file#installation[installation section].
+
 . Clone this repository.
 +
 [,sh]
 ----
-git -C ~/Projects clone git@github.com:jwillikers/foot-config.git
+git clone git@github.com:jwillikers/foot-config.git
 ----
 
-. Verify the configuration in the `foot.ini` file.
+. Change to the project's directory.
 +
 [,sh]
 ----
-foot --config=foot.ini --check-config
+cd foot-config
 ----
 
-. Create the _~/.config/foot/_ directory.
+. Run `just` to install the config.
 +
 [,sh]
 ----
-mkdir --parents ~/.config/foot/
-----
-
-. Symlink the `foot.ini` file to the config directory.
-+
-[,sh]
-----
-ln --force --relative --symbolic ~/Projects/foot-config/foot.ini ~/.config/foot/foot.ini
+just
 ----
 
 == Tips and Tricks
